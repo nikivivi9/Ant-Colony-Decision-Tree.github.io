@@ -55,6 +55,10 @@ tree.
 </p>
 
 ## Reference
+Boryczka, U., & Kozák, J. (2010). Ant colony decision trees – a new method for constructing decision trees based on ant colony optimization. In Lecture notes in computer science (pp. 373–382). https://doi.org/10.1007/978-3-642-16693-8_39
+
+Otero, F. E. B., B., Freitas, A. A., Johnson, C. G., & School of Computing, University of Kent, UK. (2012). Inducing Decision Trees with an Ant Colony Optimization Algorithm. Applied Soft Computing. https://doi.org/10.1016/j.asoc.2012.05.028
+
 Hafeez, M. A., Rashid, M., Tariq, H., Abideen, Z. U., Alotaibi, S. S., & Sinky, M. H. (2021). Performance improvement of Decision Tree: a robust classifier using Tabu search algorithm. Applied Sciences, 11(15), 6728. https://doi.org/10.3390/app11156728
 
 ## ACDT
