@@ -4,7 +4,8 @@ title: Ant Colony Decision Tree
 ---
 
 
-## Abstract 
+## Abstract
+=====
 Decision trees have been widely used in machine learning for classification and regression tasks based on its tree-like structure that represents a series of decisions and their possible consequences. In order to improve the accuracy of decision trees, researchers have proposed a new method called Ant Colony Decision Trees (ACDT), based on the Ant Colony Optimization (ACO). The ACO is a metaheuristic inspired by the foraging behavior of real ants, where they search for the shortest path between their nest and food sources by considering both local heuristic and previous knowledge, observed by pheromone changes. This article will start with a basic definition of a decision tree and then expand to the more complex ACDT, including its background and detailed explanations of the algorithm. 
 
 
@@ -13,15 +14,15 @@ A decision tree is a non-parametric supervised learning algorithm for classifica
 
 ## The ACDT Algorithm
 The Ant Colony Decision Tree algorithm consists of the following key components:
-### Pheromone Trails
+* Pheromone Trails
 A pheromone matrix is used to represent the desirability of selecting specific features and splitting criteria at each node of the decision tree. Initially, the pheromone values are set to a small positive constant.
-### Ant Colony
+* Ant Colony
 A population of artificial ants is initialized, each representing a candidate decision tree. The ants traverse the feature space, constructing decision trees based on the pheromone trails and a probabilistic decision rule.
-### Ant Evaluation
+* Ant Evaluation
 Each ant's constructed decision tree is evaluated using a fitness function, typically based on the accuracy or information gain of the tree on the training data.
-### Pheromone Update
+*  Pheromone Update
 The pheromone trails are updated based on the performance of the ants' decision trees. Pheromone evaporation is applied to prevent premature convergence, and the best-performing ants deposit additional pheromone along their paths, reinforcing promising feature selections and splits.
-### Termination Criterion
+*  Termination Criterion
 The algorithm iterates until a predefined termination criterion is met, such as a maximum number of iterations or a satisfactory level of convergence.
 
 ## Advantages of ACDT
