@@ -17,6 +17,9 @@ Ant colony optimization (ACO)  technique is inspired by the foraging behavior of
 
 <p align="center">
 <img src="/assets/ACOVisualization.gif" width="300" height="250">
+
+<p align="center">
+<img src="/assets/ACO algorithm Visual.gif" width="300" height="250">
 </p>
 
 ### Algorithm 
