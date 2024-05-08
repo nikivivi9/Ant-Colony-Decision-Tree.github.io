@@ -42,7 +42,6 @@ After the pruning, the tree is evaluated and if the quality of the newly pruned 
 (CheckConvergence procedure), the global-best tree is returned as the discovered decision
 tree.
 
-![ACDT algorithm](/assets/ACDT_algo.jpeg)
 <p align="center">
 <img src="/assets/ACDT_algo.jpeg" width="700" height="400">
 </p>
