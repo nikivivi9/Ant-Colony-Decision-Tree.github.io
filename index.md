@@ -60,22 +60,3 @@ Boryczka, U., & Kozák, J. (2010). Ant colony decision trees – a new method fo
 Otero, F. E. B., B., Freitas, A. A., Johnson, C. G., & School of Computing, University of Kent, UK. (2012). Inducing Decision Trees with an Ant Colony Optimization Algorithm. Applied Soft Computing. https://doi.org/10.1016/j.asoc.2012.05.028
 
 Hafeez, M. A., Rashid, M., Tariq, H., Abideen, Z. U., Alotaibi, S. S., & Sinky, M. H. (2021). Performance improvement of Decision Tree: a robust classifier using Tabu search algorithm. Applied Sciences, 11(15), 6728. https://doi.org/10.3390/app11156728
-
-## ACDT
-
-The Ant Colony Decision Tree algorithm consists of the following key components:
-* Pheromone Trails: A pheromone matrix is used to represent the desirability of selecting specific features and splitting criteria at each node of the decision tree. Initially, the pheromone values are set to a small positive constant.
-* Ant Colony: A population of artificial ants is initialized, each representing a candidate decision tree. The ants traverse the feature space, constructing decision trees based on the pheromone trails and a probabilistic decision rule.
-* Ant Evaluation: Each ant's constructed decision tree is evaluated using a fitness function, typically based on the accuracy or information gain of the tree on the training data.
-*  Pheromone Update: The pheromone trails are updated based on the performance of the ants' decision trees. Pheromone evaporation is applied to prevent premature convergence, and the best-performing ants deposit additional pheromone along their paths, reinforcing promising feature selections and splits.
-*  Termination Criterion: The algorithm iterates until a predefined termination criterion is met, such as a maximum number of iterations or a satisfactory level of convergence.
-  
-## Advantages of ACDT
-### 1. Exploration and Exploitation
-The probabilistic nature of the ant movements allows for both exploration of new regions in the feature space and exploitation of promising areas, balancing the search between diversification and intensification.
-### 2. Paralelization
-The algorithm is inherently parallel, as multiple ants can construct decision trees concurrently, making it suitable for efficient implementation on modern computing architectures.
-### 3. Robustness
-The swarm-based approach and the pheromone update mechanism help the algorithm escape local optima and converge toward globally optimal or near-optimal solutions.
-### 4. Interpretability
-Like traditional decision trees, the models constructed by ACDT are inherently interpretable, making them suitable for applications where explainability is crucial, such as medical diagnosis, credit risk assessment, or decision support systems.
