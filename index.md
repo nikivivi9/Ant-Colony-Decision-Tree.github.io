@@ -25,7 +25,10 @@ In the following figure, we present the pseudocode of a basic ACO algorithm whic
 * **Update pheromones:** In this procedure, we would update the pheromone levels on the components of the problem’s construction graph. The update involves either an increase as ants deposit pheromones along the paths while forming their candidate solutions, or a decrease due to the evaporation of pheromone. 
 
 We would iterate through the constructing and updating steps until we met the termination criteria, at which point we are able to achieve the optimal solution.
-![ACDT algorithm](/assets/ACO_algorithm_pseudocode.jpg)
+
+<p align="center">
+<img src="/assets/ACO_algorithm_pseudocode.jpg" width="600" height="400">
+</p>
 
 ## Ant Colony Decision Trees (ACDT)
 Based on the structure of the ACO algorithm, researchers have proposed applying it on decision tree modeling. As a result, a new metaheuristics approach based on ant colony algorithms, known as Ant Colony Decision Trees (ACDT), has been developed. Compared to the general decision tree algorithm, in ACDT,  each ant chooses the appropriate attribute for splitting in each node of the constructed decision tree according to the heuristic function and pheromone values. Following the logic of ACO, the algorithm for ACDT can be written as below.
