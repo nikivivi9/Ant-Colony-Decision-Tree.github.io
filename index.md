@@ -18,6 +18,7 @@ The Ant Colony Decision Tree algorithm consists of the following key components:
 * Ant Evaluation: Each ant's constructed decision tree is evaluated using a fitness function, typically based on the accuracy or information gain of the tree on the training data.
 *  Pheromone Update: The pheromone trails are updated based on the performance of the ants' decision trees. Pheromone evaporation is applied to prevent premature convergence, and the best-performing ants deposit additional pheromone along their paths, reinforcing promising feature selections and splits.
 *  Termination Criterion: The algorithm iterates until a predefined termination criterion is met, such as a maximum number of iterations or a satisfactory level of convergence.
+![ACDT algorithm](/assets/ACDT_algo.jpeg)
 
 ## Advantages of ACDT
 ### 1. Exploration and Exploitation
