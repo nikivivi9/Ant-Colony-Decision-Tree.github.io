@@ -22,6 +22,7 @@ Ant colony optimization (ACO)  technique is inspired by the foraging behavior of
 
 <p align="center">
 <img src="/assets/ACOVisualization.gif" width="300" height="250">
+</p>
 
 ### Algorithm 
 In the ACO algorithm, a colony of ants builds a candidate solution that is optimal or near-optimal guided by their pheromone and heuristic information. These ants traverse a construction graph to where each vertex in the graph indicates a potential element of the solution and the act of an ant moving along an edge symbolizes one ant is adding to the current solution. Once the ants successfully identify the optimal path through the problem’s construction graph, they achieve the best solution. 
