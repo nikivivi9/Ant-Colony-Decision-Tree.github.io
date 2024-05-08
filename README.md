@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Ant Colony Decision Tree
+title: Home
 ---
 # Ant Colony Decision Tree
 
