@@ -44,7 +44,7 @@ tree.
 
 ![ACDT algorithm](/assets/ACDT_algo.jpeg)
 <p align="center">
-<img src="/assets/ACDT_algo.jpeg" width="600" height="400">
+<img src="/assets/ACDT_algo.jpeg" width="700" height="400">
 </p>
 
 The Ant Colony Decision Tree algorithm consists of the following key components:
