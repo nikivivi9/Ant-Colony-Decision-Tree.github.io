@@ -24,7 +24,7 @@ The Ant Colony Decision Tree algorithm consists of the following key components:
 The probabilistic nature of the ant movements allows for both exploration of new regions in the feature space and exploitation of promising areas, balancing the search between diversification and intensification.
 ### 2. Paralelization
 The algorithm is inherently parallel, as multiple ants can construct decision trees concurrently, making it suitable for efficient implementation on modern computing architectures.
-### Robustness
+### 3. Robustness
 The swarm-based approach and the pheromone update mechanism help the algorithm escape local optima and converge toward globally optimal or near-optimal solutions.
-### Interpretability
+### 4. Interpretability
 Like traditional decision trees, the models constructed by ACDT are inherently interpretable, making them suitable for applications where explainability is crucial, such as medical diagnosis, credit risk assessment, or decision support systems.
