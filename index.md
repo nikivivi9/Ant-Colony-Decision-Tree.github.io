@@ -27,6 +27,19 @@ In the following figure, we present the pseudocode of a basic ACO algorithm whic
 We would iterate through the constructing and updating steps until we met the termination criteria, at which point we are able to achieve the optimal solution.
 
 ## Ant Colony Decision Trees (ACDT)
+Based on the structure of the ACO algorithm, researchers have proposed applying it on decision tree modeling. As a result, a new metaheuristics approach based on ant colony algorithms, known as Ant Colony Decision Trees (ACDT), has been developed. Compared to the general decision tree algorithm, in ACDT,  each ant chooses the appropriate attribute for splitting in each node of the constructed decision tree according to the heuristic function and pheromone values. Following the logic of ACO, the algorithm for ACDT can be written as below.
+
+As can be seen in Figure 3, the algorithm starts by initializing the pheromone values and computing the heuristic information for each attribute of the training set. Then, it enters in an iterative for loop. In each iteration, an ant in the colony creates a new decision tree until the maximum number of iterations is reached. 
+
+Each ant creates a decision tree (for loop) in a top-down fashion by probabilistically
+selecting attributes to be added as decision nodes based on the amount of pheromone and heuristic information. The procedure for creating a decision tree (CreateTree procedure) involves three parameters: the collection of training examples, the predictor attributes, and the edge that the ant is following, which initially corresponds to the default edge (indicated by the symbol '-'). Once the tree construction procedure has finished, the created tree is pruned in order to simplify the tree and thus potentially avoid overfitting of the model to the training data. 
+
+After the pruning, the tree is evaluated and if the quality of the newly pruned tree surpasses the quality of the existing iterative optimal tree, the iterative optimal tree (treeib) is updated. Finally, the iteration-best tree constructed by the ants is used to update the pheromone values, the global-best tree (treegb) is stored/updated and a new iteration of the algorithm starts. When the maximum number of iterations is reached or the algorithm has converged
+(CheckConvergence procedure), the global-best tree is returned as the discovered decision
+tree.
+
+
+
 The Ant Colony Decision Tree algorithm consists of the following key components:
 * Pheromone Trails: A pheromone matrix is used to represent the desirability of selecting specific features and splitting criteria at each node of the decision tree. Initially, the pheromone values are set to a small positive constant.
 * Ant Colony: A population of artificial ants is initialized, each representing a candidate decision tree. The ants traverse the feature space, constructing decision trees based on the pheromone trails and a probabilistic decision rule.
