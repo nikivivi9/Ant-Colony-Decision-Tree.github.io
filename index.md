@@ -12,10 +12,6 @@ Decision trees have been widely used in machine learning for classification and 
 A decision tree is a non-parametric supervised learning algorithm for classification and regression tasks. It has a hierarchical tree structure consisting of a root node, internal nodes, edges, and leaf nodes. It follows an iterative top-down procedure of selecting the best attribute to label an internal node of the tree. It starts at the root node that contains the entire sample, then splits at the internal node that serves as the test condition, and ends at the leaf node that is the final prediction result (Figure 1). This basic approach represents a greedy strategy to create a decision tree, since the selection of an attribute at early iterations cannot be reconsidered at later iterations. i.e., the selection of the best attribute is made locally at each iteration, without taking into consideration its influence over the subsequent iterations. However, the newly proposed ACDT algorithm is able to construct the decision tree with the in a top-down fashion by probabilistically selecting attributes to be added as decision nodes based on the amount of pheromone and heuristics information, with the pheromone values represent the quality of the connection between a parent and child decision nodes.
 
 <p align="center">
-<img src="/assets/DecisionTree.jpg" width="400" height="250">
-</p>
-
-<p align="center">
 <img src="https://raw.githubusercontent.com/nikivivi9/Ant-Colony-Decision-Tree.github.io/ant/assets/DecisionTree.jpg" alt="Decision Tree Image" width="400" height="250">
 </p>
 
@@ -24,7 +20,7 @@ A decision tree is a non-parametric supervised learning algorithm for classifica
 Ant colony optimization (ACO)  technique is inspired by the foraging behavior of ant colonies. These eusocial insects prefer community survival while their individual behavior is relatively simple and straightforward. Ants indirectly communicate between each other by making small modifications to their environment, enabling them to accomplish sophisticated tasks. When ants leave their colony in search of food, they explore various potential routes from their nest to the targeted food source. Each ant leaves behind a pheromone trail on its path. If a path is selected by multiple ants, it would collect a higher concentration of pheromone. Conversely, if there are no ants continuously following this path, the pheromone deposited by previous ants would evaporate. The concentration of pheromone on each path would affect the ant’s decision-making. Path with higher pheromone concentration would be more attractive for the following ants, whereas path with lower concentration of pheromone would be less likely to be chosen. Since ants would traverse shorter paths much quicker, shorter paths tend to gain higher pheromone concentration over time. Ultimately, ants are able to identify and converge to the optimal and shortest path from their nest to the food source. [ACO Visualisation](https://courses.cs.ut.ee/demos/visual-aco/#/visualisation "ACO Visualisation")
 
 <p align="center">
-<img src="/assets/ACOVisualization.gif" width="300" height="250">
+<img src="https://raw.githubusercontent.com/nikivivi9/Ant-Colony-Decision-Tree.github.io/ant/assets/ACOVisualization.gif" alt="ACO Image" width="300" height="250">
 </p>
 
 ### Algorithm 
@@ -39,7 +35,7 @@ In the following figure, we present the pseudocode of a basic ACO algorithm whic
 We would iterate through the constructing and updating steps until we met the termination criteria, at which point we are able to achieve the optimal solution.
 
 <p align="center">
-<img src="/assets/ACO_algorithm_pseudocode.jpg" width="400" height="250">
+<img src="https://raw.githubusercontent.com/nikivivi9/Ant-Colony-Decision-Tree.github.io/ant/assets/ACO_algorithm_pseudocode.jpg" alt="ACO gif" width="400" height="250">
 </p>
 
 ## Ant Colony Decision Trees (ACDT)
@@ -55,7 +51,7 @@ After the pruning, the tree is evaluated and if the quality of the newly pruned 
 tree.
 
 <p align="center">
-<img src="/assets/ACDT_algo.jpeg" width="700" height="400">
+<img src="https://raw.githubusercontent.com/nikivivi9/Ant-Colony-Decision-Tree.github.io/ant/assets/ACDT_algo.jpeg" alt="ACDT gif" width="700" height="400">
 </p>
 
 ## Reference
