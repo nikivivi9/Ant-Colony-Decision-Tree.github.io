@@ -27,7 +27,7 @@ In the following figure, we present the pseudocode of a basic ACO algorithm whic
 We would iterate through the constructing and updating steps until we met the termination criteria, at which point we are able to achieve the optimal solution.
 
 <p align="center">
-<img src="/assets/ACO_algorithm_pseudocode.jpg" width="400" height="300">
+<img src="/assets/ACO_algorithm_pseudocode.jpg" width="400" height="250">
 </p>
 
 ## Ant Colony Decision Trees (ACDT)
