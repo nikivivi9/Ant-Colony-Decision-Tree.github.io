@@ -54,7 +54,8 @@ tree.
 <img src="/assets/ACDT_algo.jpeg" width="700" height="400">
 </p>
 
-
+## Reference
+Hafeez, M. A., Rashid, M., Tariq, H., Abideen, Z. U., Alotaibi, S. S., & Sinky, M. H. (2021). Performance improvement of Decision Tree: a robust classifier using Tabu search algorithm. Applied Sciences, 11(15), 6728. https://doi.org/10.3390/app11156728
 
 ## ACDT
 
