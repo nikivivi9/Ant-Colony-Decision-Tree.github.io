@@ -40,7 +40,7 @@ After the pruning, the tree is evaluated and if the quality of the newly pruned 
 tree.
 
 ![ACDT algorithm](/assets/ACDT_algo.jpeg)
-<img src="/assets/ACDT_algo.jpeg" width="600" height="400">
+<img src="/assets/ACDT_algo.jpeg" width="600" height="400" align="center">
 
 The Ant Colony Decision Tree algorithm consists of the following key components:
 * Pheromone Trails: A pheromone matrix is used to represent the desirability of selecting specific features and splitting criteria at each node of the decision tree. Initially, the pheromone values are set to a small positive constant.
