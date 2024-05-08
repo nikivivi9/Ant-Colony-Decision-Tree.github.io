@@ -27,7 +27,7 @@ In the following figure, we present the pseudocode of a basic ACO algorithm whic
 We would iterate through the constructing and updating steps until we met the termination criteria, at which point we are able to achieve the optimal solution.
 
 <p align="center">
-<img src="/assets/ACO_algorithm_pseudocode.jpg" width="600" height="400">
+<img src="/assets/ACO_algorithm_pseudocode.jpg" width="400" height="300">
 </p>
 
 ## Ant Colony Decision Trees (ACDT)
@@ -46,14 +46,17 @@ tree.
 <img src="/assets/ACDT_algo.jpeg" width="700" height="400">
 </p>
 
+
+
+## ACDT
+
 The Ant Colony Decision Tree algorithm consists of the following key components:
 * Pheromone Trails: A pheromone matrix is used to represent the desirability of selecting specific features and splitting criteria at each node of the decision tree. Initially, the pheromone values are set to a small positive constant.
 * Ant Colony: A population of artificial ants is initialized, each representing a candidate decision tree. The ants traverse the feature space, constructing decision trees based on the pheromone trails and a probabilistic decision rule.
 * Ant Evaluation: Each ant's constructed decision tree is evaluated using a fitness function, typically based on the accuracy or information gain of the tree on the training data.
 *  Pheromone Update: The pheromone trails are updated based on the performance of the ants' decision trees. Pheromone evaporation is applied to prevent premature convergence, and the best-performing ants deposit additional pheromone along their paths, reinforcing promising feature selections and splits.
 *  Termination Criterion: The algorithm iterates until a predefined termination criterion is met, such as a maximum number of iterations or a satisfactory level of convergence.
-
-
+  
 ## Advantages of ACDT
 ### 1. Exploration and Exploitation
 The probabilistic nature of the ant movements allows for both exploration of new regions in the feature space and exploitation of promising areas, balancing the search between diversification and intensification.
