@@ -15,7 +15,7 @@ A decision tree is a non-parametric supervised learning algorithm for classifica
 <img src="/assets/DecisionTree.jpg" width="400" height="250">
 </p>
 <p align="center">
-<img src="https://github.com/nikivivi9/Ant-Colony_Decision_Tree.github.io/ant/asset/DecisionTree.jpg)
+<img src="https://github.com/nikivivi9/Ant-Colony-Decision-Tree.github.io/ant/asset/DecisionTree.jpg)
 " width="400" height="250">
 </p>
 
