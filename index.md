@@ -12,6 +12,7 @@ A decision tree is a non-parametric supervised learning algorithm for classifica
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/nikivivi9/Ant-Colony-Decision-Tree.github.io/ant/assets/DecisionTree.jpg" alt="Decision Tree Image" width="400" height="250">
+<figcaption>Caption: Description of the image.</figcaption>
 </p>
 
 ## Ant Colony Optimization (ACO)
@@ -35,7 +36,6 @@ We would iterate through the constructing and updating steps until we met the te
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/nikivivi9/Ant-Colony-Decision-Tree.github.io/ant/assets/ACO_algorithm_pseudocode.jpg" alt="ACO gif" width="400" height="250">
-<figcaption>Caption: Description of the image.</figcaption>
 </p>
 
 ## Ant Colony Decision Trees (ACDT)
