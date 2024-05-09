@@ -15,6 +15,11 @@ A decision tree is a non-parametric supervised learning algorithm for classifica
 <figcaption align="center"> Figure 1.</figcaption>
 </p>
 
+<div style="text-align: center;">
+  <img src="https://raw.githubusercontent.com/nikivivi9/Ant-Colony-Decision-Tree.github.io/ant/assets/DecisionTree.jpg" alt="Decision Tree Image" width="400" height="250">
+  <div>Figure 1.</div>
+</div>
+
 ## Ant Colony Optimization (ACO)
 ### Background 
 Ant colony optimization (ACO)  technique is inspired by the foraging behavior of ant colonies. These eusocial insects prefer community survival while their individual behavior is relatively simple and straightforward. Ants indirectly communicate between each other by making small modifications to their environment, enabling them to accomplish sophisticated tasks. When ants leave their colony in search of food, they explore various potential routes from their nest to the targeted food source. Each ant leaves behind a pheromone trail on its path. If a path is selected by multiple ants, it would collect a higher concentration of pheromone. Conversely, if there are no ants continuously following this path, the pheromone deposited by previous ants would evaporate. The concentration of pheromone on each path would affect the ant’s decision-making. Path with higher pheromone concentration would be more attractive for the following ants, whereas path with lower concentration of pheromone would be less likely to be chosen. Since ants would traverse shorter paths much quicker, shorter paths tend to gain higher pheromone concentration over time. Ultimately, ants are able to identify and converge to the optimal and shortest path from their nest to the food source. [ACO Visualisation](https://courses.cs.ut.ee/demos/visual-aco/#/visualisation "ACO Visualisation")
