@@ -25,7 +25,7 @@ Decision trees have been widely used in machine learning for classification and 
 A decision tree is a non-parametric supervised learning algorithm for classification and regression tasks. It has a hierarchical tree structure consisting of a root node, decision nodes, edges, and leaf nodes. It follows an iterative top-down procedure of selecting the best attribute to label an internal node of the tree. It starts at the root node that contains the entire sample, then splits at the decision node that serves as the test condition and ends at the leaf node that is the final prediction result (Figure 1). This basic approach represents a greedy strategy to create a decision tree since the selection of an attribute at early iterations cannot be reconsidered at later iterations. i.e., the selection of the best attribute is made locally at each iteration, without taking into consideration its influence over the subsequent iterations. However, the newly proposed ACDT algorithm is able to construct the decision tree in a top-down fashion by probabilistically selecting attributes to be added as decision nodes based on the amount of pheromone and heuristics information, with the pheromone values represent the quality of the connection between a parent and child decision nodes.
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/nikivivi9/Ant-Colony-Decision-Tree.github.io/ant/assets/DecisionTree.jpg" alt="Decision Tree Image" width="400" height="250">
+<img src="https://raw.githubusercontent.com/nikivivi9/Ant-Colony-Decision-Tree.github.io/ant/assets/DecisionTree.png" alt="Decision Tree Image" width="400" height="250">
 <figcaption align="center"> Figure 1. Visualization of Decision Tree </figcaption>
 </p>
 
