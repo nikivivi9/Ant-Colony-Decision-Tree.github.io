@@ -1,8 +1,2 @@
 theme: jekyll-theme-cayman
-markdown: kramdown
-kramdown:
-  input: GFM
-  syntax_highlighter_opts:
-    block:
-      data-line: {line}
-    default_lang: ''
+
