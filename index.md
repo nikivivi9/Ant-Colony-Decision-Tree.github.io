@@ -53,7 +53,9 @@ We would iterate through the constructing and updating steps until we met the te
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/nikivivi9/Ant-Colony-Decision-Tree.github.io/ant/assets/ACO_algorithm_pseudocode.jpg" alt="ACO gif" width="400" height="250">
+<figcaption align="center"> Figure 3. Pseudocode of ACO </figcaption>
 </p>
+
 
 ### Example     
 Here, we present a simple example of an ACO algorithm with one colony and one food source. The colony and food sources are connected by two paths with different lengths.
@@ -86,6 +88,7 @@ $v \in (0, 1]$ represents the pheromone evaporation rate.
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/nikivivi9/Ant-Colony-Decision-Tree.github.io/ant/assets/ACO_example.jpg" alt="ACO Image" width="400" height="250">
+<figcaption align="center"> Figure 4. Example of ACO </figcaption>
 </p>
 
 
@@ -101,12 +104,14 @@ After the pruning, the tree is evaluated and if the quality of the newly pruned 
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/nikivivi9/Ant-Colony-Decision-Tree.github.io/ant/assets/ACDT_Code.png" alt="ACDT Image" width="500" height="400">
+<figcaption align="center"> Figure 5. Pseudocode of ACDT </figcaption>
 </p>
 
 ### Example
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/nikivivi9/Ant-Colony-Decision-Tree.github.io/ant/assets/ACDT_example.png" alt="ACDT Image" width="450" height="400">
+<figcaption align="center"> Figure 6. Example of ACDT </figcaption>
 </p>
 
 ## Reference
