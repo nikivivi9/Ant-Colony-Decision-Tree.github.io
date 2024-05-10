@@ -100,13 +100,13 @@ After the pruning, the tree is evaluated and if the quality of the newly pruned 
 
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/nikivivi9/Ant-Colony-Decision-Tree.github.io/ant/assets/ACDT_Code.png" alt="ACDT Image" width="600" height="500">
+<img src="https://raw.githubusercontent.com/nikivivi9/Ant-Colony-Decision-Tree.github.io/ant/assets/ACDT_Code.png" alt="ACDT Image" width="500" height="400">
 </p>
 
 ### Example
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/nikivivi9/Ant-Colony-Decision-Tree.github.io/ant/assets/ACDT_example.png" alt="ACDT Image" width="500" height="600">
+<img src="https://raw.githubusercontent.com/nikivivi9/Ant-Colony-Decision-Tree.github.io/ant/assets/ACDT_example.png" alt="ACDT Image" width="500" height="400">
 </p>
 
 ## Reference
