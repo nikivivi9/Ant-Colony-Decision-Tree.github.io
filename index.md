@@ -46,7 +46,7 @@ Here, we present a simple example of an ACO algorithm with one colony and one fo
 
 * At the first stage, all ants are located in their nest and there are no pheromone trails present on any path. 
 * Next,  in the second stage, ants start from their nest to explore the food source with an equal probability of choosing either path (three ants choose the shorter path, and the other three choose the longer path). As they travel, ants deposit pheromones along their chosen path. 
-* Then, ants who choose the shorter path (represented by square point in the figure) arrive at the food source earlier.  
+* Then, ants who choose the shorter path (represented by square points in the figure) arrive at the food source earlier.  
 * Arrived ants need to decide their return path back to their colony presented in stage 4. Since the pheromone trail of the shorter path has been formulated, the probability for ants to choose the shorter path would be higher than for them to choose the longer path (two ants choose to follow the shorter path and one ant chooses to follow the longer path). 
 
 
@@ -62,7 +62,9 @@ $$R_i=R_i+\frac{K}{L_i} \text{ where K = A constant which determines the total a
 Evaporation:
 $$R_i=(1-v) \cdot R_i \text{ where } v \in (0, 1] \text{which represents the pheromone evaporation rate.}$$
 
-
+<p align="center">
+<img src="https://raw.githubusercontent.com/nikivivi9/Ant-Colony-Decision-Tree.github.io/ant/assets/ACO_example.jpg" alt="ACO Image" width="400" height="250">
+</p>
 
 
 ## Ant Colony Decision Trees (ACDT)
