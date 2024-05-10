@@ -60,7 +60,7 @@ The updation of pheromone concentration level on the path can be expressed as
 Aggregation:
 $$R_i=R_i+\frac{K}{L_i} \text{ where K = A constant which determines the total amount of pheromone deposited by each ant.}$$
 Evaporation:
-$$R_i=(1-v) \cdot R_i \text{ where } v \in (0, 1] which represents the pheromone evaporation rate.$$
+$$R_i=(1-v) \cdot R_i \text{ where } v \in (0, 1] \text{which represents the pheromone evaporation rate.}$$
 
 
 
