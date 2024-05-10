@@ -57,8 +57,10 @@ For each iteration, our ants originally stay at their colony which denotes $V_s$
 The probability for each ant’s path selection would be $P_i=\frac{R_i}{R_1+R_2}$. If $R_1 > R_2$, the probability of choosing $E_1$ (path 1) would be higher than the probability of choosing $E_2$ (path 2) and vice-versa. As time goes on, the pheromone concentration level of a path would either increase due to the aggregation of pheromone as ants select to take this path or decrease due to the evaporation of pheromone. 
 
 The updation of pheromone concentration level on the path can be expressed as 
+
 Aggregation:
 $$R_i=R_i+\frac{K}{L_i} \text{ where K = A constant which determines the total amount of pheromone deposited by each ant.}$$
+
 Evaporation:
 $$R_i=(1-v) \cdot R_i \text{ where } v \in (0, 1] \text{which represents the pheromone evaporation rate.}$$
 
@@ -87,3 +89,5 @@ Boryczka, U., & Kozák, J. (2010). Ant colony decision trees – a new method fo
 Otero, F. E. B., B., Freitas, A. A., Johnson, C. G., & School of Computing, University of Kent, UK. (2012). Inducing Decision Trees with an Ant Colony Optimization Algorithm. Applied Soft Computing. https://doi.org/10.1016/j.asoc.2012.05.028
 
 Hafeez, M. A., Rashid, M., Tariq, H., Abideen, Z. U., Alotaibi, S. S., & Sinky, M. H. (2021). Performance improvement of Decision Tree: a robust classifier using Tabu search algorithm. Applied Sciences, 11(15), 6728. https://doi.org/10.3390/app11156728
+
+GeeksforGeeks. (2020, May 17). Introduction to Ant Colony Optimization. GeeksforGeeks. https://www.geeksforgeeks.org/introduction-to-ant-colony-optimization/
