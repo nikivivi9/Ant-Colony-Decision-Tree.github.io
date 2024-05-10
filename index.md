@@ -55,7 +55,7 @@ Here, we present a simple example of an ACO algorithm with one colony and one fo
 
 More ants would increasingly favor the shorter path due to the aggregation of pheromones. The pheromone trail on the shorter path would increasingly be more attractive for ants. Moreover, the pheromone concentration for the longer path would gradually reduce due to evaporation which would decrease the probability for the following ants to select it.
 
-For each iteration, our ants originally stay at their colony which denotes $V_s$, and move from their colony to explore the food source $V_d$ and return. Assuming two edges (paths) are $E_1$ and $E_2$ with corresponding lengths $L_1$ and $L_2$. In our example, we would denote $E_1$ as the shorter path and $E_2$ as the longer path which indicates that $L_1 < L_2$. In addition, the pheromone values for the two paths are $R_1$ and $R_2$. 
+For each iteration, our ants originally stay at their colony which denotes $V_s$, and move from their colony to explore the food source $V_d$ and return. Assuming two edges (paths) are $E_1$ and $E_2$ with corresponding lengths $L_1$ and $L_2$. In our example, we would denote $E_1$ as the shorter path and $E_2$ as the longer path which indicates that $L_1 < L_2$. In addition, the pheromone values for the two paths are $R_1$ and $R_2$.
 
 The probability for each ant’s path selection would be $P_i=\frac{R_i}{R_1+R_2}$. If $R_1 > R_2$, the probability of choosing $E_1$ (path 1) would be higher than the probability of choosing $E_2$ (path 2) and vice-versa. As time goes on, the pheromone concentration level of a path would either increase due to the aggregation of pheromone as ants select to take this path or decrease due to the evaporation of pheromone. 
 
