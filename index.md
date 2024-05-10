@@ -22,7 +22,7 @@ Decision trees have been widely used in machine learning for classification and 
 
 
 ## Decision Trees
-A decision tree is a non-parametric supervised learning algorithm for classification and regression tasks. It has a hierarchical tree structure consisting of a root node, decision nodes, edges, and leaf nodes. It follows an iterative top-down procedure of selecting the best attribute to label an internal node of the tree. It starts at the root node that contains the entire sample, then splits at the decision node that serves as the test condition and ends at the leaf node that is the final prediction result (Figure 1). This basic approach represents a greedy strategy to create a decision tree since the selection of an attribute at early iterations cannot be reconsidered at later iterations. i.e., the selection of the best attribute is made locally at each iteration, without taking into consideration its influence over the subsequent iterations. However, the newly proposed ACDT algorithm is able to construct the decision tree in a top-down fashion by probabilistically selecting attributes to be added as decision nodes based on the amount of pheromone and heuristics information, with the pheromone values represent the quality of the connection between a parent and child decision nodes.
+A decision tree is a non-parametric supervised learning algorithm for classification and regression tasks. It has a hierarchical tree structure consisting of a root node, decision nodes, edges, and leaf nodes. It follows an iterative top-down procedure of selecting the best attribute to label an internal node of the tree. It starts at the root node that contains the entire sample, then splits at the decision node that serves as the test condition, and ends at the leaf node that is the final prediction result (Figure 1). This basic approach represents a greedy strategy to create a decision tree since the selection of an attribute at early iterations cannot be reconsidered at later iterations. i.e., the selection of the best attribute is made locally at each iteration, without taking into consideration its influence over the subsequent iterations. However, the newly proposed ACDT algorithm is able to construct the decision tree in a top-down fashion by probabilistically selecting attributes to be added as decision nodes based on the amount of pheromone and heuristics information, with the pheromone values represent the quality of the connection between a parent and child decision nodes.
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/nikivivi9/Ant-Colony-Decision-Tree.github.io/ant/assets/DecisionTree.png" alt="Decision Tree Image" width="400" height="250">
@@ -32,7 +32,7 @@ A decision tree is a non-parametric supervised learning algorithm for classifica
 
 ## Ant Colony Optimization (ACO)
 ### Background 
-Ant colony optimization (ACO)  technique is inspired by the foraging behavior of ant colonies. These eusocial insects prefer community survival while their individual behavior is relatively simple and straightforward. Ants indirectly communicate between each other by making small modifications to their environment, enabling them to accomplish sophisticated tasks. When ants leave their colony in search of food, they explore various potential routes from their nest to the targeted food source. Each ant leaves behind a pheromone trail on its path. If a path is selected by multiple ants, it would collect a higher concentration of pheromone. Conversely, if there are no ants continuously following this path, the pheromone deposited by previous ants would evaporate. The concentration of pheromone on each path would affect the ant’s decision-making. Path with higher pheromone concentration would be more attractive for the following ants, whereas path with lower concentration of pheromone would be less likely to be chosen. Since ants would traverse shorter paths much quicker, shorter paths tend to gain higher pheromone concentration over time. Ultimately, ants are able to identify and converge to the optimal and shortest path from their nest to the food source. [ACO Visualisation](https://courses.cs.ut.ee/demos/visual-aco/#/visualisation "ACO Visualisation")
+Ant colony optimization (ACO)  technique is inspired by the foraging behavior of ant colonies. These eusocial insects prefer community survival while their individual behavior is relatively simple and straightforward. Ants indirectly communicate with each other by making small modifications to their environment, enabling them to accomplish sophisticated tasks. When ants leave their colony in search of food, they explore various potential routes from their nest to the targeted food source. Each ant leaves behind a pheromone trail on its path. If a path is selected by multiple ants, it would collect a higher concentration of pheromone. Conversely, if there are no ants continuously following this path, the pheromone deposited by previous ants would evaporate. The concentration of pheromone on each path would affect the ant’s decision-making. The path with a higher pheromone concentration would be more attractive for the following ants, whereas the path with a lower concentration of pheromone would be less likely to be chosen. Since ants would traverse shorter paths much quicker, shorter paths tend to gain higher pheromone concentration over time. Ultimately, ants are able to identify and converge to the optimal and shortest path from their nest to the food source. [ACO Visualisation](https://courses.cs.ut.ee/demos/visual-aco/#/visualisation "ACO Visualisation")
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/nikivivi9/Ant-Colony-Decision-Tree.github.io/ant/assets/ACOVisualization.gif" alt="ACO Image" width="300" height="250">
@@ -47,9 +47,9 @@ In the following figure, we present the pseudocode of a basic ACO algorithm whic
 * **Initialize:** In this procedure, we define the algorithm’s parameters and set up the pheromone matrix along with heuristic information relevant to the vertices and edges of our construction graph.
 * **Construct Ant Solution:** In this procedure, we simulate the movement of artificial ants to gradually construct the candidate solutions. These ants navigate through the construction graph and make decisions at each step by applying a stochastic decision policy which incorporates the heuristic and pheromone information. 
 * **Apply local search:** The application of local search is optional and it facilitates us to refine ant’s solution. Local search would introduce minor adjustments to a solution to examine its neighbor solutions and the implementation of this algorithm usually exhibits great enhancement on our ACO algorithm’s performance. 
-* **Update pheromones:** In this procedure, we would update the pheromone levels on the components of the problem’s construction graph. The update involves either an increase as ants deposit pheromones along the paths while forming their candidate solutions, or a decrease due to the evaporation of pheromone. 
+* **Update pheromones:** In this procedure, we would update the pheromone levels on the components of the problem’s construction graph. The update involves either an increase as ants deposit pheromones along the paths while forming their candidate solutions, or a decrease due to the evaporation of pheromones. 
 
-We would iterate through the constructing and updating steps until we met the termination criteria, at which point we are able to achieve the optimal solution.
+We would iterate through the constructing and updating steps until we meet the termination criteria, at which point we are able to achieve the optimal solution.
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/nikivivi9/Ant-Colony-Decision-Tree.github.io/ant/assets/ACO_algorithm_pseudocode.jpg" alt="ACO gif" width="400" height="250">
@@ -78,7 +78,7 @@ The updation of pheromone concentration level on the path can be expressed as
 
 $$R_i=R_i+\frac{K}{L_i}$$
 
-K = A constant which determines the total amount of pheromone deposited by each ant.
+K = A constant that determines the total amount of pheromone deposited by each ant.
 
 **Evaporation:**
 
@@ -108,6 +108,17 @@ After the pruning, the tree is evaluated and if the quality of the newly pruned 
 </p>
 
 ### Example
+
+To better understand ACDT, we can look at the example below. In our example, $\{a_1, a_2, a_3, a_4\}$ are all possible binary attributes that we want to split on. The notation $(a_i,0)$ indicates that we choose to split on the attribute $a_i$ and go along the edge 0. For the ACDT algorithm, in which the pheromone trail is laid on the edges, pheromone trail values are assigned to edges between parent-child pairs of nodes.
+
+We choose the evaporation rate $v$ to be 0.1. A  higher value of this parameter leads to faster pheromone evaporation and higher punishment on the pheromone value. We assume that the initial pheromone value for all edges (trails) is 0.5, and once the ants select an edge, they leave an additional 0.8 amount of pheromone value.
+
+* First, we assume that we split on attribute $a_1$, and go along with edge 0 in the previous iteration. That is, in this example, we begin with $(a_1, 0)$.
+* Then, in iteration t, two ant agents explore their possible paths based on an initial pheromone value equal to 0.5. One of the ants chooses $(a_3,1)$ and the other ant chooses $(a_3,0)$. After choosing these two edges, they leave 0.8 amount of pheromone on the edges, and the pheromone values on these two edges are updated to $(0.5+0.8)*0.9=1.17$, i.e., the amount of pheromone on the edges multiplied by (1 - evaporation rate). The unselected edges have no additional 0.8 pheromones and are therefore equal to $(0.5+0.0)*0.9 = 0.45$.
+* Next, in iteration t+1, the two ant agents make the decision to move again, but based on the updated pheromone values, which are now $\{1.17, 0.45, 1.17, 0.45\}$. This time, one chooses $(a_2,0)$ and the other chooses $(a_3,0)$. Similar to the previous iteration, the pheromone values for the two newly chosen edges are updated to $(0.45+0.8)*0.9=1.125$ and $(1.17+0.8)*0.9=1.773$.
+* The above process continues until the maximum number of iterations is reached. Eventually, the greater the pheromone trail value, the more ant agents have chosen a given solution.
+
+We can see that in such a trivial case after two algorithm iterations two edges that were once included in the previously constructed best decision trees (with the same quality) have different values of the pheromone trail. Edge $((a_1, 0), (a_3, 1), 1.053)$, which occurred earlier, has a smaller value of the pheromone trail (thus a lower support value) than edge $((a_1, 0), (a_4, 0), 1.125)$, which occurred later. This shows that, unlike the greedy decision tree algorithm, ACDT, in collaboration with ACO, aims to find the global optimum through iterative improvement and collective learning from the experience of multiple ant agents.
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/nikivivi9/Ant-Colony-Decision-Tree.github.io/ant/assets/ACDT_example.png" alt="ACDT Image" width="450" height="400">
