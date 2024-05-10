@@ -80,7 +80,9 @@ K = A constant which determines the total amount of pheromone deposited by each 
 
 **Evaporation:**
 
-$$R_i=(1-v) \cdot R_i \text{ where } v \in (0, 1] \text{ which represents the pheromone evaporation rate.}$$
+$$R_i=(1-v) \cdot R_i $$
+
+$v \in (0, 1]$ represents the pheromone evaporation rate.
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/nikivivi9/Ant-Colony-Decision-Tree.github.io/ant/assets/ACO_example.jpg" alt="ACO Image" width="400" height="250">
