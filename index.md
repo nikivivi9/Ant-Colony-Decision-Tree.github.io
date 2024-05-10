@@ -103,6 +103,12 @@ After the pruning, the tree is evaluated and if the quality of the newly pruned 
 <img src="https://raw.githubusercontent.com/nikivivi9/Ant-Colony-Decision-Tree.github.io/ant/assets/ACDT_Code.png" alt="ACDT Image" width="550" height="400">
 </p>
 
+### Example
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/nikivivi9/Ant-Colony-Decision-Tree.github.io/ant/assets/ACDT_example.png" alt="ACDT Image" width="400" height="700">
+</p>
+
 ## Reference
 Boryczka, U., & Kozák, J. (2010). Ant colony decision trees – a new method for constructing decision trees based on ant colony optimization. In Lecture notes in computer science (pp. 373–382). https://doi.org/10.1007/978-3-642-16693-8_39
 
