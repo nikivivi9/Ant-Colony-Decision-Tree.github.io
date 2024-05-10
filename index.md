@@ -41,6 +41,30 @@ We would iterate through the constructing and updating steps until we met the te
 <img src="https://raw.githubusercontent.com/nikivivi9/Ant-Colony-Decision-Tree.github.io/ant/assets/ACO_algorithm_pseudocode.jpg" alt="ACO gif" width="400" height="250">
 </p>
 
+### Example     
+Here, we present a simple example of an ACO algorithm with one colony and one food source. The colony and food sources are connected by two paths with different lengths.
+
+* At the first stage, all ants are located in their nest and there are no pheromone trails present on any path. 
+* Next,  in the second stage, ants start from their nest to explore the food source with an equal probability of choosing either path (three ants choose the shorter path, and the other three choose the longer path). As they travel, ants deposit pheromones along their chosen path. 
+* Then, ants who choose the shorter path (represented by square point in the figure) arrive at the food source earlier.  
+* Arrived ants need to decide their return path back to their colony presented in stage 4. Since the pheromone trail of the shorter path has been formulated, the probability for ants to choose the shorter path would be higher than for them to choose the longer path (two ants choose to follow the shorter path and one ant chooses to follow the longer path). 
+
+
+More ants would increasingly favor the shorter path due to the aggregation of pheromones. The pheromone trail on the shorter path would increasingly be more attractive for ants. Moreover, the pheromone concentration for the longer path would gradually reduce due to evaporation which would decrease the probability for the following ants to select it.
+
+For each iteration, our ants originally stay at their colony which denotes $V_s$, and move from their colony to explore the food source $V_d$ and return. Assuming two edges (paths) are $E_1$ and $E_2$ with corresponding lengths $L_1$ and $L_2$. In our example, we would denote $E_1$ as the shorter path and $E_2$ as the longer path which indicates that $L_1 < L_2$. In addition, the pheromone values for the two paths are $R_1$ and $R_2$. 
+
+The probability for each ant’s path selection would be $P_i=\frac{R_i}{R_1+R_2}$. If $R_1 > R_2$, the probability of choosing $E_1$ (path 1) would be higher than the probability of choosing $E_2$ (path 2) and vice-versa. As time goes on, the pheromone concentration level of a path would either increase due to the aggregation of pheromone as ants select to take this path or decrease due to the evaporation of pheromone. 
+
+The updation of pheromone concentration level on the path can be expressed as 
+Aggregation:
+$$R_i=R_i+\frac{K}{L_i} \text{ where K = A constant which determines the total amount of pheromone deposited by each ant.}$$
+Evaporation:
+$$R_i=(1-v) \cdot R_i \text{ where } v \in (0, 1] which represents the pheromone evaporation rate.$$
+
+
+
+
 ## Ant Colony Decision Trees (ACDT)
 Based on the structure of the ACO algorithm, researchers have proposed applying it to decision tree modeling. As a result, a new metaheuristics approach based on ant colony algorithms, known as Ant Colony Decision Trees (ACDT), has been developed. Compared to the general decision tree algorithm, in ACDT,  each ant chooses the appropriate attribute for splitting in each decision node of the constructed decision tree according to the heuristic function and pheromone values. Following the logic of ACO, the algorithm for ACDT can be written as below. 
 
