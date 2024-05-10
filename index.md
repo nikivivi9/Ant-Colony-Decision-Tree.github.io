@@ -22,6 +22,8 @@ Ant colony optimization (ACO)  technique is inspired by the foraging behavior of
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/nikivivi9/Ant-Colony-Decision-Tree.github.io/ant/assets/ACOVisualization.gif" alt="ACO Image" width="300" height="250">
+<figcaption align="center"> Figure 2. Simulation of ACO </figcaption>
+<figcaption align="center"> Grey lines indicate the possible paths; Black line indicates the optimal path. </figcaption>
 </p>
 
 ### Algorithm 
